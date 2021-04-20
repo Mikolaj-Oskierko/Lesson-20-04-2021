@@ -1,0 +1,143 @@
+*{
+}
+
+html{
+}
+
+nav{
+    display:flex;
+}
+
+nav>a{
+    margin-left:auto;
+    margin-right:auto;
+    text-decoration:none;
+    color:white;
+    border:0px solid white;
+    background:rgb(241, 193, 36);
+    padding-right:5%;
+    padding-left:5%;
+    padding-top:1%;
+    padding-bottom:1%;
+    border-radius:1ch;
+    font-size:2.5ch;
+}
+
+nav>a:hover{
+    transition-property: background transform;
+    transition-duration:0.5s;
+    transition-delay: 0.2s;
+    transition-timing-function:ease-in-out;
+    background:rgb(199, 221, 5);
+    transform:skewX(10deg);
+}
+
+body{
+    margin:0;
+    background:rgb(2, 4, 34);
+    color:rgb(206, 238, 248);
+}
+
+header{
+    color:rgb(192, 225, 238);
+    text-align:center;
+    text-shadow:2px 2px 4px rgb(44, 28, 82), -2px -2px 4px rgb(44, 28, 82), -2px 2px 4px rgb(44, 28, 82),2px -2px 4px rgb(44, 28, 82);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image:url(../PIC/transform.png);
+    background-size:cover;
+    letter-spacing:1ch;
+    font-size:5ch;
+    padding:1%;  
+}
+
+h1{
+    transform:skewX(-5deg);
+    transform:skewY(-5deg);
+}
+
+h2{
+    text-align:center;
+    color:rgb(255, 255, 191);
+    font-size:3ch;
+    padding:5%;
+}
+
+li{
+    color:rgb(245, 179, 38);
+    font-size:2.5ch;
+    transform:translateY(50%);
+}
+
+li:nth-child(odd){
+    transform:skewX(20deg) translateY(50%);
+}
+
+a{
+}
+
+p{
+    margin-top:0%;
+    text-indent:2ch;
+    font-size:2.5ch;
+}
+
+footer{
+}
+
+section{
+}
+
+.wrap{
+    display:grid;
+    grid-template-areas:
+    'navigation navigation navigation navigation navigation sidebar'
+    '. content content content content sidebar'
+    '. content content content content sidebar'
+    '. content content content content sidebar'
+    '. content content content content sidebar'
+    '. content content content content sidebar'
+    'footnote footnote footnote footnote footnote footnote';
+    grid-gap:10px;
+    grid-auto-columns:minmax(120px, auto);
+    grid-auto-rows:minmax(100px, auto);
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.nest{
+    display:grid;
+    grid-template-rows: 30% 40% 30%;
+    grid-auto-columns:minmax(100px, auto);
+    grid-auto-rows:minmax(10px, auto);
+}
+
+section{
+    padding:5%;
+}
+
+.content{
+    grid-area:content;
+}
+
+.sidebar{
+    grid-area:sidebar;
+    background-color: rgb(40, 89, 105);
+    border-radius:2ch;
+}
+
+.sidebar:hover{
+    transition: background margin;
+    transition-delay:0.2s;
+    transition-duration:0.5s;
+    transition-timing-function:ease-in-out;
+    background-color: rgb(22, 50, 59);
+    margin-top:10%;
+}
+
+.navigation{
+    grid-area:navigation;
+}
+
+.footnote{
+    grid-area:footnote;
+}
