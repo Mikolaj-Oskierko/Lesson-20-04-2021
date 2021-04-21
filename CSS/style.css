@@ -21,6 +21,7 @@ nav>a{
     padding-bottom:1%;
     border-radius:1ch;
     font-size:2.5ch;
+    transition: 0.5s ease;
 }
 
 nav>a:hover{
@@ -47,7 +48,8 @@ header{
     background-size:cover;
     letter-spacing:1ch;
     font-size:5ch;
-    padding:1%;  
+    padding:1%;
+     
 }
 
 h1{
@@ -65,11 +67,11 @@ h2{
 li{
     color:rgb(245, 179, 38);
     font-size:2.5ch;
-    transform:translateY(50%);
+    transition: 0.5s ease;
 }
 
 li:nth-child(odd){
-    transform:skewX(20deg) translateY(50%);
+    transform:skewX(20deg) translateX(-10%);
 }
 
 a{
@@ -109,6 +111,7 @@ section{
     grid-template-rows: 30% 40% 30%;
     grid-auto-columns:minmax(100px, auto);
     grid-auto-rows:minmax(10px, auto);
+    transition: 0.7s ease;
 }
 
 section{
@@ -123,6 +126,8 @@ section{
     grid-area:sidebar;
     background-color: rgb(40, 89, 105);
     border-radius:2ch;
+    margin-top:20%;
+    transition: 0.5s ease;
 }
 
 .sidebar:hover{
